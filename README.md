@@ -5,7 +5,9 @@ This is useful for Golden Images in Azure that stay in the Stopped state beyond 
 You can use this script via the serial console.  EX:
 
 $global:ProgressPreference = "SilentlyContinue"
+
 $script = Invoke-WebRequest https://raw.githubusercontent.com/optimus378/ResetRDPGracePeriod/main/ResetRDPGracePeriod.ps1
+
 Invoke-Expression $($script.Content)
 
 Use at your own Risk. Not responsible for misuse. 
